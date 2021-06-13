@@ -9,6 +9,7 @@ count5 = 0;
 %n is the number of simulations you want to run
 num_prob_sum = 0;
 mean_prop_prob = 0;
+tic;
 parfor i = 1:n
     M = randi([1,9],9);
     [m_opt, num_prob, prop_prob] = sudokuextra(3,M);
@@ -40,6 +41,7 @@ parfor i = 1:n
     
     
 end
+toc;
 
 counts_of_types = [count0, count1, count2, count3, count4, count5];
 
