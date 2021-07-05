@@ -18,7 +18,9 @@ parfor w = 1:n
    A = [A; vec_of_success];
    if sum(vec_of_success) == 24
        m_standardized = standardize(m_opt);
+      
        if ~isequal(m_standardized,standard_check)
+           m_standardized
            check_stand = check_stand + 1;
        end               
    end

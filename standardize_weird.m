@@ -1,4 +1,4 @@
-function [m_standardized] = standardize(m_opt)
+function [m_standardized] = standardize_weird(m_opt)
 A = m_opt;
 [rows,cols] = size(m_opt);
 B = m_opt(1:3,1:3);
