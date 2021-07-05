@@ -10,8 +10,8 @@ count24_super = 0;
 parfor a = 1:n
     M = randi([1,9],9);
     [M_opt, num_prob, prop_of_probs] = sudokuextra(3,M);
-    M_opt = standardize(M_opt)
-    M_opt
+    M_opt = standardize(M_opt);
+    
     
     b = checkall(M_opt);
     
