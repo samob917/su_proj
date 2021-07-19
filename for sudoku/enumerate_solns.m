@@ -63,4 +63,9 @@ toc
 
 final
 
+fileID = fopen('enumerate.txt','w');
+nbytes = fprintf(fileID,'%5d %5d %5d %5d %5d %5d %5d %5d %5d \n',fin_solution)
+fclose(fileID);
+
+
 end
